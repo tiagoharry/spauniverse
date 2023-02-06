@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/mountains-universe-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.material-symbols-outlined {
+  display: none;
+}
+
+.menuMobile {
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 40px 72px;
+}
+
+nav a { 
+  color: #C4C4CC;
+  font-size: 21.6667px;
+  line-height: 22px;
+  text-decoration: none;
+  transition: 3s ease;
+}
+
+nav a:hover {
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.hide {
+  display: none;
+}
+
+.hero {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #E1E1E6;
+}
+
+.box h1 {
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 125%;
+}
+
+.box button {
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 12px 32px;
+  cursor: pointer;
+}
+
+.box button a {
+  font-size: 14px;
+  color: #E1E1E6;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.box button:hover {
+  background-color: white;
+}
+
+.box button a:hover {
+  color: black;
+}
+
+.container {
+  margin-left: 102px;
+  width: 648px;
+  height: 203px;
+}
+
+.container h1 {
+  margin-bottom: 16px;
+  color: #E1E1E6;
+  font-size: 48px;
+  line-height: 125%;
+}
+
+.container p {
+  font-size: 18px;
+  line-height: 160%;
+  color: #E1E1E6;
+}
+
+@media (max-width:412px) {
+
+  nav {
+  display: none;
+}
+
+.menu .material-symbols-outlined {
+  display: block;
+  color: white;
+  padding: 30px;
+  font-size: 33px;
+}
+
+.close .material-symbols-outlined{
+  display: block;
+  color: white;
+  padding: 30px;
+  font-size: 33px;
+  position:relative;
+}
+
+.menuMobile {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  color: black;
+  top: 0;
+  padding: 80px 60px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+  border-radius: 0 10px 10px 0;  
+  position: absolute;
+  margin-top: 70px;
+}
+
+.menuMobile a {
+  color: black;
+
+
+}
+
+@keyframes drop {
+  0% {
+    background: transparent;
+  }
+
+  100% {
+    background: #FFFFFF;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+  .hero {
+    padding: 7px;
+    text-align: center;
+  }
+
+  .box h1 {
+    font-size: 55px;
+  }
+
+  .container {
+    width: 248px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+  
+}
+
